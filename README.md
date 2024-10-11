@@ -33,6 +33,25 @@ docker container rename my-app5 my-app1
 ```
 
 
+#container push
+```
+docker image push docker.io/emreeoozell/devops-application-001:v002
+```
+
+#SÜRÜM YÜKLENMESİ VE TEKRAR GÜNCELLENMESİ
+
+```
+docker build --build-arg JAR_FILE=target/devops-001-hello-1.0.1.jar  --tag  emreeoozell/devops-application-001:v001 .
+```
+
+```
+docker build --build-arg JAR_FILE=target/devops-001-hello-1.0.2.jar  --tag  emreeoozell/devops-application-001:v002 .
+```
+
+#Son sürüm zorunlu olarak çıakrtmamız gerekliidir. Mutlaka son sürüm bu ya gözükemsi lazım
+```
+docker build --build-arg JAR_FILE=target/devops-001-hello-1.0.2.jar  --tag  emreeoozell/devops-application-001:latest .
+```
 
 ============= kendi projemizi Docker image haline çevimek =============
 ```

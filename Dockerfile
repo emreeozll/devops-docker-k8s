@@ -44,4 +44,4 @@ ENTRYPOINT ["java", "-jar", "devops-001-hello-1.0.2.jar"]
 #docker build --build-arg JAR_FILE=target/devops-001-hello-1.0.2.jar  --tag  emreeoozell/devops-application-001:v002 .
 
 #Son sürüm zorunlu olarak çıakrtmamız gereklii. Mutlaka son sürüm bu ya gözükemsi lazım
-# docker build --build-arg JAR_FILE=target/devops-001-hello-1.0.2.jar  --tag  emreeoozell/devops-application-001:v002 .
+# docker build --build-arg JAR_FILE=target/devops-001-hello-1.0.2.jar  --tag  emreeoozell/devops-application-001:latest .
