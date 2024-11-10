@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oldest-application
+  labels:
+    name: my-pod-1
+    type: backend
+    projectname: javaApp
+
+
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: oldest-application
+  template:
+    metadata:
+      labels:
+        app: oldest-application
+
+
+    spec:
+      containers:
+      - name: oldest-application
+        image: emreeoozell/devops-application-001:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 9095

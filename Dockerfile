@@ -26,7 +26,7 @@ CMD sudo apt-get upgrade -y
 EXPOSE 8080
 
 
-#Burada yaptığımızı cmd ile de yapabilriz.
+#Burada yaptığımızı cmd ile de yapabiliriz.
 #EntryPoint bir dizi [] halinde alıyor değerleri.
 # Uygulamanın çalıaşcağı komut.
 #Cmd ile .jar nasıl çalıştırılır. " java - jar devops-application-2024 "

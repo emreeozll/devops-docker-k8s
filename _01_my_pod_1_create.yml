@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod-3
+  labels:
+    run: oldest-application
+    type: backend
+    app: my-service
+    project-name: mydemo
+spec:
+  containers:
+  - name: oldest-application
+    image: emreeoozell/devops-application-001:v002
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 9095
