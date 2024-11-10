@@ -145,5 +145,5 @@ Thumbs.db
 /dist
 package-lock.json
 
-# Image;
+# Image
 *.png
